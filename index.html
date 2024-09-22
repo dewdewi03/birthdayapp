@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday For U</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/font.css">
+    <link rel="stylesheet" href="/responsive.css">
+    <link rel="stylesheet" href="/scrollbar.css">
+
+    <!-- icon -->
+    <link rel="icon" href="/img/logo/logo.png" type="image/png">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Indie+Flower&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+    
+    <div class="form-container">
+        <form id="myForm">
+            <div class="judul">
+                <h2 class="roboto-black">ISI FORM UNTUK</h2>
+                <h4 class="roboto-black">MELANJUTKAN</h4>
+            </div>
+            <div class="form-group">
+                <label for="name">Nama</label>
+                <input class="great-vibes-regular" type="text" id="name" placeholder="Masukkan Nama" required>
+            </div>
+            <div class="form-group">
+                <label for="hopes">Harapan</label>
+                <input class="great-vibes-regular" type="text" id="hopes" placeholder="Masukkan harapan" required>
+            </div>
+            <div class="form-group">
+                <label for="birth-month">Bulan Lahir</label>
+                <select class="great-vibes-regular" id="birth-month" required>
+                    <option value="">Klik Untuk Pilih Bulan</option>
+                    <option value="januari">Januari</option>
+                    <option value="februari">Februari</option>
+                    <option value="maret">Maret</option>
+                    <option value="april">April</option>
+                    <option value="mei">Mei</option>
+                    <option value="juni">Juni</option>
+                    <option value="juli">Juli</option>
+                    <option value="agustus">Agustus</option>
+                    <option value="september">September</option>
+                    <option value="oktober">Oktober</option>
+                    <option value="november">November</option>
+                    <option value="desember">Desember</option>
+                </select>
+            </div>
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" style="display: none;">&times;</span> <!-- Hapus atau sembunyikan ini -->
+            <div id="modalText" class="modal-text"></div>
+            <div class="button-container">
+                <button class="selanjutnya" id="nextButton">Selanjutnya</button>
+            </div>            
+            <button id="navigateButton" style="display: none;">Menuju Halaman Lain</button>
+        </div>
+    </div>    
+    
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
